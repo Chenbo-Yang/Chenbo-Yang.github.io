@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,15 +176,6 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForContentMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForContentMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
-                             boolean&nbsp;isSuccess,
-                             java.lang.String&nbsp;code,
-                             java.lang.String&nbsp;message,
-                             java.lang.String&nbsp;content)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForEventFinishResult(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForEventFinishResult</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                                 boolean&nbsp;isSuccess,
                                 java.lang.String&nbsp;code,
@@ -193,27 +184,46 @@ extends java.lang.Object</pre>
                                 java.lang.String&nbsp;finish)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForEventResult(com.uptrillion.sdk.device.DataCallback,boolean,org.json.JSONObject)">dataCallbackForEventResult</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                           boolean&nbsp;isSuccess,
                           org.json.JSONObject&nbsp;jsonObject)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForFormatError(com.uptrillion.sdk.device.DataCallback)">dataCallbackForFormatError</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForProcessingFormatError(com.uptrillion.sdk.device.DataCallback)">dataCallbackForProcessingFormatError</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String)">dataCallbackForProcessingMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                                 java.lang.String&nbsp;code,
                                 java.lang.String&nbsp;message)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForProcessingMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                java.lang.String&nbsp;code,
+                                java.lang.String&nbsp;message,
+                                java.lang.String&nbsp;event,
+                                java.lang.String&nbsp;finish)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,org.json.JSONObject)">dataCallbackForProcessingMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                                 org.json.JSONObject&nbsp;jsonObject)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String)">dataCallbackForResultMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                             boolean&nbsp;isSuccess,
@@ -221,11 +231,38 @@ extends java.lang.Object</pre>
                             java.lang.String&nbsp;message)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForWrapperResult(com.uptrillion.sdk.device.DataCallback,boolean,org.json.JSONObject)">dataCallbackForWrapperResult</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForResultMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                             boolean&nbsp;isSuccess,
-                            org.json.JSONObject&nbsp;jsonObject)</code></th>
+                            java.lang.String&nbsp;code,
+                            java.lang.String&nbsp;statusCode,
+                            java.lang.String&nbsp;message)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.util.Map)">dataCallbackForResultMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                            boolean&nbsp;isSuccess,
+                            java.lang.String&nbsp;code,
+                            java.util.Map&lt;java.lang.String,&#8203;java.lang.Object&gt;&nbsp;messageMap)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForReversalResultMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForReversalResultMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                    java.lang.String&nbsp;code,
+                                    java.lang.String&nbsp;message,
+                                    java.lang.String&nbsp;reversalMessage)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataCallbackForReversalResultMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">dataCallbackForReversalResultMessage</a></span>&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                    java.lang.String&nbsp;code,
+                                    java.lang.String&nbsp;message,
+                                    java.lang.String&nbsp;reversalStatusCode,
+                                    java.lang.String&nbsp;reversalMessage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -271,6 +308,19 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataCallbackForResultMessage</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForResultMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                                boolean&nbsp;isSuccess,
+                                                java.lang.String&nbsp;code,
+                                                java.lang.String&nbsp;statusCode,
+                                                java.lang.String&nbsp;message)</pre>
+</li>
+</ul>
 <a id="dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String)">
 <!--   -->
 </a>
@@ -283,17 +333,54 @@ extends java.lang.Object</pre>
                                                 java.lang.String&nbsp;message)</pre>
 </li>
 </ul>
-<a id="dataCallbackForContentMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String)">
+<a id="dataCallbackForResultMessage(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.util.Map)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>dataCallbackForContentMessage</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForContentMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
-                                                 boolean&nbsp;isSuccess,
-                                                 java.lang.String&nbsp;code,
-                                                 java.lang.String&nbsp;message,
-                                                 java.lang.String&nbsp;content)</pre>
+<h4>dataCallbackForResultMessage</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForResultMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                                boolean&nbsp;isSuccess,
+                                                java.lang.String&nbsp;code,
+                                                java.util.Map&lt;java.lang.String,&#8203;java.lang.Object&gt;&nbsp;messageMap)</pre>
+</li>
+</ul>
+<a id="dataCallbackForReversalResultMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataCallbackForReversalResultMessage</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForReversalResultMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                                        java.lang.String&nbsp;code,
+                                                        java.lang.String&nbsp;message,
+                                                        java.lang.String&nbsp;reversalStatusCode,
+                                                        java.lang.String&nbsp;reversalMessage)</pre>
+</li>
+</ul>
+<a id="dataCallbackForReversalResultMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataCallbackForReversalResultMessage</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForReversalResultMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                                        java.lang.String&nbsp;code,
+                                                        java.lang.String&nbsp;message,
+                                                        java.lang.String&nbsp;reversalMessage)</pre>
+</li>
+</ul>
+<a id="dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataCallbackForProcessingMessage</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForProcessingMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
+                                                    java.lang.String&nbsp;code,
+                                                    java.lang.String&nbsp;message,
+                                                    java.lang.String&nbsp;event,
+                                                    java.lang.String&nbsp;finish)</pre>
 </li>
 </ul>
 <a id="dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,java.lang.String,java.lang.String)">
@@ -304,12 +391,7 @@ extends java.lang.Object</pre>
 <h4>dataCallbackForProcessingMessage</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForProcessingMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                                                     java.lang.String&nbsp;code,
-                                                    java.lang.String&nbsp;message)
-                                             throws org.json.JSONException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>org.json.JSONException</code></dd>
-</dl>
+                                                    java.lang.String&nbsp;message)</pre>
 </li>
 </ul>
 <a id="dataCallbackForProcessingMessage(com.uptrillion.sdk.device.DataCallback,org.json.JSONObject)">
@@ -319,23 +401,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>dataCallbackForProcessingMessage</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForProcessingMessage&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
-                                                    org.json.JSONObject&nbsp;jsonObject)
-                                             throws org.json.JSONException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>org.json.JSONException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="dataCallbackForWrapperResult(com.uptrillion.sdk.device.DataCallback,boolean,org.json.JSONObject)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>dataCallbackForWrapperResult</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForWrapperResult&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
-                                                boolean&nbsp;isSuccess,
-                                                org.json.JSONObject&nbsp;jsonObject)</pre>
+                                                    org.json.JSONObject&nbsp;jsonObject)</pre>
 </li>
 </ul>
 <a id="dataCallbackForEventFinishResult(com.uptrillion.sdk.device.DataCallback,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
@@ -355,12 +421,30 @@ extends java.lang.Object</pre>
 <a id="dataCallbackForEventResult(com.uptrillion.sdk.device.DataCallback,boolean,org.json.JSONObject)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>dataCallbackForEventResult</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForEventResult&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback,
                                               boolean&nbsp;isSuccess,
                                               org.json.JSONObject&nbsp;jsonObject)</pre>
+</li>
+</ul>
+<a id="dataCallbackForFormatError(com.uptrillion.sdk.device.DataCallback)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dataCallbackForFormatError</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForFormatError&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback)</pre>
+</li>
+</ul>
+<a id="dataCallbackForProcessingFormatError(com.uptrillion.sdk.device.DataCallback)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>dataCallbackForProcessingFormatError</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;dataCallbackForProcessingFormatError&#8203;(<a href="DataCallback.html" title="interface in com.uptrillion.sdk.device">DataCallback</a>&nbsp;dataCallback)</pre>
 </li>
 </ul>
 </li>

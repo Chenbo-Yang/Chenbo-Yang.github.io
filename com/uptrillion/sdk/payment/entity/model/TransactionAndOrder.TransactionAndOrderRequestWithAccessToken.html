@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -186,7 +186,7 @@ extends <a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">createRequestInfo</a></span>&#8203;(<a href="RequestInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">RequestInfo</a>&nbsp;requestInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createTransactionRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">createTransactionRequestInfo</a></span>&#8203;(<a href="RequestInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">RequestInfo</a>&nbsp;requestInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -195,28 +195,38 @@ extends <a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRequestBody()">getRequestBody</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRequestMethod()">getRequestMethod</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionInformation()">getTransactionInformation</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionRequestBody()">getTransactionRequestBody</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../transcation/TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionType()">getTransactionType</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUrl()">getUrl</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTransactionInformation(com.uptrillion.sdk.payment.transcation.TransactionInformation)">setTransactionInformation</a></span>&#8203;(<a href="../../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTransactionType(com.uptrillion.sdk.payment.transcation.TransactionType)">setTransactionType</a></span>&#8203;(<a href="../../transcation/TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a>&nbsp;transactionType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -225,7 +235,7 @@ extends <a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.uptrillion.sdk.payment.entity.baseModel.<a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseReqModel</a></h3>
-<code><a href="../baseModel/BaseReqModel.html#generateRequestBody(java.util.HashMap)">generateRequestBody</a>, <a href="../baseModel/BaseReqModel.html#generateSignature()">generateSignature</a>, <a href="../baseModel/BaseReqModel.html#getAccessKeyID()">getAccessKeyID</a>, <a href="../baseModel/BaseReqModel.html#getAuthorization()">getAuthorization</a>, <a href="../baseModel/BaseReqModel.html#getPort()">getPort</a>, <a href="../baseModel/BaseReqModel.html#getSignature()">getSignature</a>, <a href="../baseModel/BaseReqModel.html#getTimeStamp()">getTimeStamp</a>, <a href="../baseModel/BaseReqModel.html#setAccessKeyID(java.lang.String)">setAccessKeyID</a>, <a href="../baseModel/BaseReqModel.html#setAuthorization(java.lang.String)">setAuthorization</a>, <a href="../baseModel/BaseReqModel.html#setPort(int)">setPort</a>, <a href="../baseModel/BaseReqModel.html#setRequestMethod(int)">setRequestMethod</a>, <a href="../baseModel/BaseReqModel.html#setSignature(java.lang.String)">setSignature</a>, <a href="../baseModel/BaseReqModel.html#setTimeStamp(java.lang.String)">setTimeStamp</a>, <a href="../baseModel/BaseReqModel.html#setUrl(java.lang.String)">setUrl</a></code></li>
+<code><a href="../baseModel/BaseReqModel.html#createRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">createRequestInfo</a>, <a href="../baseModel/BaseReqModel.html#generateRequestBody(java.util.HashMap)">generateRequestBody</a>, <a href="../baseModel/BaseReqModel.html#generateSignature()">generateSignature</a>, <a href="../baseModel/BaseReqModel.html#getAccessKeyID()">getAccessKeyID</a>, <a href="../baseModel/BaseReqModel.html#getAuthorization()">getAuthorization</a>, <a href="../baseModel/BaseReqModel.html#getPort()">getPort</a>, <a href="../baseModel/BaseReqModel.html#getRequestBody()">getRequestBody</a>, <a href="../baseModel/BaseReqModel.html#getSignature()">getSignature</a>, <a href="../baseModel/BaseReqModel.html#getTimeStamp()">getTimeStamp</a>, <a href="../baseModel/BaseReqModel.html#setAccessKeyID(java.lang.String)">setAccessKeyID</a>, <a href="../baseModel/BaseReqModel.html#setAuthorization(java.lang.String)">setAuthorization</a>, <a href="../baseModel/BaseReqModel.html#setPort(int)">setPort</a>, <a href="../baseModel/BaseReqModel.html#setRequestMethod(int)">setRequestMethod</a>, <a href="../baseModel/BaseReqModel.html#setSignature(java.lang.String)">setSignature</a>, <a href="../baseModel/BaseReqModel.html#setTimeStamp(java.lang.String)">setTimeStamp</a>, <a href="../baseModel/BaseReqModel.html#setUrl(java.lang.String)">setUrl</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -270,6 +280,24 @@ extends <a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a id="getTransactionType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTransactionType</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../transcation/TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a>&nbsp;getTransactionType()</pre>
+</li>
+</ul>
+<a id="setTransactionType(com.uptrillion.sdk.payment.transcation.TransactionType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTransactionType</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTransactionType&#8203;(<a href="../../transcation/TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a>&nbsp;transactionType)</pre>
+</li>
+</ul>
 <a id="getTransactionInformation()">
 <!--   -->
 </a>
@@ -323,29 +351,39 @@ extends <a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.
 </dl>
 </li>
 </ul>
-<a id="getRequestBody()">
+<a id="getTransactionRequestBody()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getRequestBody</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getRequestBody()</pre>
+<h4>getTransactionRequestBody</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTransactionRequestBody()
+                                           throws java.lang.NullPointerException,
+                                                  org.json.JSONException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../baseModel/BaseReqModel.html#getRequestBody()">getRequestBody</a></code>&nbsp;in class&nbsp;<code><a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseReqModel</a></code></dd>
+<dd><code><a href="../baseModel/BaseReqModel.html#getTransactionRequestBody()">getTransactionRequestBody</a></code>&nbsp;in class&nbsp;<code><a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseReqModel</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code></dd>
+<dd><code>org.json.JSONException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="createRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">
+<a id="createTransactionRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>createRequestInfo</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;createRequestInfo&#8203;(<a href="RequestInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">RequestInfo</a>&nbsp;requestInfo)</pre>
+<h4>createTransactionRequestInfo</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;createTransactionRequestInfo&#8203;(<a href="RequestInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">RequestInfo</a>&nbsp;requestInfo)
+                                  throws java.lang.NullPointerException,
+                                         org.json.JSONException</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../baseModel/BaseReqModel.html#createRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">createRequestInfo</a></code>&nbsp;in class&nbsp;<code><a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseReqModel</a></code></dd>
+<dd><code><a href="../baseModel/BaseReqModel.html#createTransactionRequestInfo(com.uptrillion.sdk.payment.entity.model.RequestInfo)">createTransactionRequestInfo</a></code>&nbsp;in class&nbsp;<code><a href="../baseModel/BaseReqModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseReqModel</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code></dd>
+<dd><code>org.json.JSONException</code></dd>
 </dl>
 </li>
 </ul>

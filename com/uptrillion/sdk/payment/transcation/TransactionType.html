@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":9};
+var data = {"i0":9,"i1":10,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -162,22 +162,18 @@ extends java.lang.Enum&lt;<a href="TransactionType.html" title="enum in com.uptr
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#REFUND">REFUND</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#RETURN">RETURN</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#REVERSAL">REVERSAL</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#SALE">SALE</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#VOID">VOID</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -210,18 +206,13 @@ extends java.lang.Enum&lt;<a href="TransactionType.html" title="enum in com.uptr
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static java.lang.String[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionTypeStrings()">getTransactionTypeStrings</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#valueOf(java.lang.String)">valueOf</a></span>&#8203;(java.lang.String&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#values()">values</a></span>()</code></th>
 <td class="colLast">
@@ -267,15 +258,6 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>SALE</h4>
 <pre>public static final&nbsp;<a href="TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a> SALE</pre>
-</li>
-</ul>
-<a id="REFUND">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>REFUND</h4>
-<pre>public static final&nbsp;<a href="TransactionType.html" title="enum in com.uptrillion.sdk.payment.transcation">TransactionType</a> REFUND</pre>
 </li>
 </ul>
 <a id="VOID">
@@ -364,15 +346,6 @@ not permitted.)</div>
 <li class="blockList">
 <h4>getTransactionType</h4>
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTransactionType()</pre>
-</li>
-</ul>
-<a id="getTransactionTypeStrings()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTransactionTypeStrings</h4>
-<pre class="methodSignature">public static&nbsp;java.lang.String[]&nbsp;getTransactionTypeStrings()</pre>
 </li>
 </ul>
 <a id="findTypeByString(java.lang.String)">

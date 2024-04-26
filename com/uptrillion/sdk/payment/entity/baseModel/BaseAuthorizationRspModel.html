@@ -188,7 +188,7 @@ extends <a href="BaseRspModel.html" title="class in com.uptrillion.sdk.payment.e
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;com.uptrillion.sdk.payment.entity.baseModel.<a href="BaseRspModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseRspModel</a></h3>
-<code><a href="BaseRspModel.html#responseMap">responseMap</a>, <a href="BaseRspModel.html#ResultCode">ResultCode</a>, <a href="BaseRspModel.html#ResultMsg">ResultMsg</a></code></li>
+<code><a href="BaseRspModel.html#responseMap">responseMap</a>, <a href="BaseRspModel.html#ResultCode">ResultCode</a>, <a href="BaseRspModel.html#ResultMsg">ResultMsg</a>, <a href="BaseRspModel.html#statusCode">statusCode</a></code></li>
 </ul>
 </li>
 </ul>
@@ -230,9 +230,7 @@ extends <a href="BaseRspModel.html" title="class in com.uptrillion.sdk.payment.e
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveAndUpdateConfiguration(com.uptrillion.sdk.authentication.Configuration,android.content.Context,java.lang.String)">saveAndUpdateConfiguration</a></span>&#8203;(<a href="../../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                          android.content.Context&nbsp;context,
-                          java.lang.String&nbsp;accessKeySecret)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveAndUpdateAuthentication()">saveAndUpdateAuthentication</a></span>()</code></th>
 <td class="colLast">
 <div class="block">save encrypted to shared preferences
  update configuration with plain text</div>
@@ -244,7 +242,7 @@ extends <a href="BaseRspModel.html" title="class in com.uptrillion.sdk.payment.e
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.uptrillion.sdk.payment.entity.baseModel.<a href="BaseRspModel.html" title="class in com.uptrillion.sdk.payment.entity.baseModel">BaseRspModel</a></h3>
-<code><a href="BaseRspModel.html#convertReponseToMap(okhttp3.Response)">convertReponseToMap</a>, <a href="BaseRspModel.html#deserializeResponse(okhttp3.Response,java.lang.reflect.Type)">deserializeResponse</a>, <a href="BaseRspModel.html#getResultCode()">getResultCode</a>, <a href="BaseRspModel.html#getResultMsg()">getResultMsg</a>, <a href="BaseRspModel.html#setResultCode(java.lang.String)">setResultCode</a>, <a href="BaseRspModel.html#setResultMsg(java.lang.String)">setResultMsg</a>, <a href="BaseRspModel.html#updateResponse(okhttp3.Response)">updateResponse</a></code></li>
+<code><a href="BaseRspModel.html#convertReponseToMap(okhttp3.Response)">convertReponseToMap</a>, <a href="BaseRspModel.html#deserializeResponse(okhttp3.Response,java.lang.reflect.Type)">deserializeResponse</a>, <a href="BaseRspModel.html#getResultCode()">getResultCode</a>, <a href="BaseRspModel.html#getResultMsg()">getResultMsg</a>, <a href="BaseRspModel.html#getStatusCode()">getStatusCode</a>, <a href="BaseRspModel.html#setResultCode(java.lang.String)">setResultCode</a>, <a href="BaseRspModel.html#setResultMsg(java.lang.String)">setResultMsg</a>, <a href="BaseRspModel.html#updateResponse(okhttp3.Response)">updateResponse</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -338,15 +336,13 @@ protected&nbsp;java.lang.String refreshTokenExpires</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="saveAndUpdateConfiguration(com.uptrillion.sdk.authentication.Configuration,android.content.Context,java.lang.String)">
+<a id="saveAndUpdateAuthentication()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>saveAndUpdateConfiguration</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;saveAndUpdateConfiguration&#8203;(<a href="../../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                                       android.content.Context&nbsp;context,
-                                       java.lang.String&nbsp;accessKeySecret)</pre>
+<h4>saveAndUpdateAuthentication</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;saveAndUpdateAuthentication()</pre>
 <div class="block">save encrypted to shared preferences
  update configuration with plain text</div>
 </li>

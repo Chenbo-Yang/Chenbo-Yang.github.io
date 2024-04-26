@@ -12,5 +12,6 @@ com.uptrillion.sdk.payment.entity
 com.uptrillion.sdk.payment.entity.baseModel
 com.uptrillion.sdk.payment.entity.model
 com.uptrillion.sdk.payment.entity.model.extData
+com.uptrillion.sdk.payment.operation
 com.uptrillion.sdk.payment.reader
 com.uptrillion.sdk.payment.transcation

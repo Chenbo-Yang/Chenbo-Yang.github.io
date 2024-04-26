@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,13 +157,14 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">OrderLine</a></span>&#8203;(java.lang.String&nbsp;productGuid,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.String,double,double,int,double,double,double)">OrderLine</a></span>&#8203;(java.lang.String&nbsp;productGuid,
          java.lang.String&nbsp;productName,
-         java.lang.String&nbsp;unitPriceIncTax,
-         java.lang.String&nbsp;unitPriceExcTax,
-         java.lang.String&nbsp;quantity,
-         java.lang.String&nbsp;totalPriceIncTax,
-         java.lang.String&nbsp;discountAmt)</code></th>
+         double&nbsp;unitPriceIncTax,
+         double&nbsp;unitPriceExcTax,
+         int&nbsp;quantity,
+         double&nbsp;totalPriceIncTax,
+         double&nbsp;discountAmt,
+         double&nbsp;totalTaxAmt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -190,7 +191,7 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDiscountAmt()">getDiscountAmt</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -215,78 +216,88 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getQuantity()">getQuantity</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalPriceExcTax()">getTotalPriceExcTax</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalPriceIncTax()">getTotalPriceIncTax</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitPriceExcTax()">getUnitPriceExcTax</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalTaxAmt()">getTotalTaxAmt</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitPriceIncTax()">getUnitPriceIncTax</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitPriceExcTax()">getUnitPriceExcTax</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDiscountAmt(java.lang.String)">setDiscountAmt</a></span>&#8203;(java.lang.String&nbsp;discountAmt)</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUnitPriceIncTax()">getUnitPriceIncTax</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLineNumber(java.lang.String)">setLineNumber</a></span>&#8203;(java.lang.String&nbsp;lineNumber)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDiscountAmt(double)">setDiscountAmt</a></span>&#8203;(double&nbsp;discountAmt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductGuid(java.lang.String)">setProductGuid</a></span>&#8203;(java.lang.String&nbsp;productGuid)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLineNumber(java.lang.String)">setLineNumber</a></span>&#8203;(java.lang.String&nbsp;lineNumber)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductName(java.lang.String)">setProductName</a></span>&#8203;(java.lang.String&nbsp;productName)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductGuid(java.lang.String)">setProductGuid</a></span>&#8203;(java.lang.String&nbsp;productGuid)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductSKU(java.lang.String)">setProductSKU</a></span>&#8203;(java.lang.String&nbsp;productSKU)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductName(java.lang.String)">setProductName</a></span>&#8203;(java.lang.String&nbsp;productName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setQuantity(java.lang.String)">setQuantity</a></span>&#8203;(java.lang.String&nbsp;quantity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setProductSKU(java.lang.String)">setProductSKU</a></span>&#8203;(java.lang.String&nbsp;productSKU)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTotalPriceExcTax(java.lang.String)">setTotalPriceExcTax</a></span>&#8203;(java.lang.String&nbsp;totalPriceExcTax)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setQuantity(int)">setQuantity</a></span>&#8203;(int&nbsp;quantity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTotalPriceIncTax(java.lang.String)">setTotalPriceIncTax</a></span>&#8203;(java.lang.String&nbsp;totalPriceIncTax)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTotalPriceExcTax(double)">setTotalPriceExcTax</a></span>&#8203;(double&nbsp;totalPriceExcTax)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnitPriceExcTax(java.lang.String)">setUnitPriceExcTax</a></span>&#8203;(java.lang.String&nbsp;unitPriceExcTax)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTotalPriceIncTax(double)">setTotalPriceIncTax</a></span>&#8203;(double&nbsp;totalPriceIncTax)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnitPriceIncTax(java.lang.String)">setUnitPriceIncTax</a></span>&#8203;(java.lang.String&nbsp;unitPriceIncTax)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTotalTaxAmt(double)">setTotalTaxAmt</a></span>&#8203;(double&nbsp;totalTaxAmt)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnitPriceExcTax(double)">setUnitPriceExcTax</a></span>&#8203;(double&nbsp;unitPriceExcTax)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUnitPriceIncTax(double)">setUnitPriceIncTax</a></span>&#8203;(double&nbsp;unitPriceIncTax)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -313,7 +324,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+<a id="&lt;init&gt;(java.lang.String,java.lang.String,double,double,int,double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -321,11 +332,12 @@ extends java.lang.Object</pre>
 <h4>OrderLine</h4>
 <pre>public&nbsp;OrderLine&#8203;(java.lang.String&nbsp;productGuid,
                  java.lang.String&nbsp;productName,
-                 java.lang.String&nbsp;unitPriceIncTax,
-                 java.lang.String&nbsp;unitPriceExcTax,
-                 java.lang.String&nbsp;quantity,
-                 java.lang.String&nbsp;totalPriceIncTax,
-                 java.lang.String&nbsp;discountAmt)</pre>
+                 double&nbsp;unitPriceIncTax,
+                 double&nbsp;unitPriceExcTax,
+                 int&nbsp;quantity,
+                 double&nbsp;totalPriceIncTax,
+                 double&nbsp;discountAmt,
+                 double&nbsp;totalTaxAmt)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String)">
@@ -398,16 +410,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getUnitPriceIncTax</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getUnitPriceIncTax()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getUnitPriceIncTax()</pre>
 </li>
 </ul>
-<a id="setUnitPriceIncTax(java.lang.String)">
+<a id="setUnitPriceIncTax(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setUnitPriceIncTax</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setUnitPriceIncTax&#8203;(java.lang.String&nbsp;unitPriceIncTax)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setUnitPriceIncTax&#8203;(double&nbsp;unitPriceIncTax)</pre>
 </li>
 </ul>
 <a id="getUnitPriceExcTax()">
@@ -416,16 +428,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getUnitPriceExcTax</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getUnitPriceExcTax()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getUnitPriceExcTax()</pre>
 </li>
 </ul>
-<a id="setUnitPriceExcTax(java.lang.String)">
+<a id="setUnitPriceExcTax(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setUnitPriceExcTax</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setUnitPriceExcTax&#8203;(java.lang.String&nbsp;unitPriceExcTax)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setUnitPriceExcTax&#8203;(double&nbsp;unitPriceExcTax)</pre>
 </li>
 </ul>
 <a id="getQuantity()">
@@ -434,16 +446,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getQuantity</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getQuantity()</pre>
+<pre class="methodSignature">public&nbsp;int&nbsp;getQuantity()</pre>
 </li>
 </ul>
-<a id="setQuantity(java.lang.String)">
+<a id="setQuantity(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setQuantity</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setQuantity&#8203;(java.lang.String&nbsp;quantity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setQuantity&#8203;(int&nbsp;quantity)</pre>
 </li>
 </ul>
 <a id="getTotalPriceIncTax()">
@@ -452,16 +464,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTotalPriceIncTax</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTotalPriceIncTax()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getTotalPriceIncTax()</pre>
 </li>
 </ul>
-<a id="setTotalPriceIncTax(java.lang.String)">
+<a id="setTotalPriceIncTax(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTotalPriceIncTax</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTotalPriceIncTax&#8203;(java.lang.String&nbsp;totalPriceIncTax)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTotalPriceIncTax&#8203;(double&nbsp;totalPriceIncTax)</pre>
 </li>
 </ul>
 <a id="getTotalPriceExcTax()">
@@ -470,16 +482,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTotalPriceExcTax</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getTotalPriceExcTax()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getTotalPriceExcTax()</pre>
 </li>
 </ul>
-<a id="setTotalPriceExcTax(java.lang.String)">
+<a id="setTotalPriceExcTax(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTotalPriceExcTax</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTotalPriceExcTax&#8203;(java.lang.String&nbsp;totalPriceExcTax)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTotalPriceExcTax&#8203;(double&nbsp;totalPriceExcTax)</pre>
 </li>
 </ul>
 <a id="getDiscountAmt()">
@@ -488,16 +500,16 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDiscountAmt</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getDiscountAmt()</pre>
+<pre class="methodSignature">public&nbsp;double&nbsp;getDiscountAmt()</pre>
 </li>
 </ul>
-<a id="setDiscountAmt(java.lang.String)">
+<a id="setDiscountAmt(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDiscountAmt</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDiscountAmt&#8203;(java.lang.String&nbsp;discountAmt)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDiscountAmt&#8203;(double&nbsp;discountAmt)</pre>
 </li>
 </ul>
 <a id="getProductSKU()">
@@ -530,10 +542,28 @@ extends java.lang.Object</pre>
 <a id="setLineNumber(java.lang.String)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setLineNumber</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setLineNumber&#8203;(java.lang.String&nbsp;lineNumber)</pre>
+</li>
+</ul>
+<a id="getTotalTaxAmt()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTotalTaxAmt</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getTotalTaxAmt()</pre>
+</li>
+</ul>
+<a id="setTotalTaxAmt(double)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setTotalTaxAmt</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTotalTaxAmt&#8203;(double&nbsp;totalTaxAmt)</pre>
 </li>
 </ul>
 </li>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,11 +156,6 @@ extends java.lang.Object</pre>
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">CardProcess</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(android.content.Context,com.uptrillion.sdk.device.DeviceConnect)">CardProcess</a></span>&#8203;(android.content.Context&nbsp;cont,
-           <a href="../../device/DeviceConnect.html" title="class in com.uptrillion.sdk.device">DeviceConnect</a>&nbsp;deviceConnect)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -181,7 +176,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cardPaymentProcess(com.uptrillion.sdk.payment.reader.PaymentInfo,boolean)">cardPaymentProcess</a></span>&#8203;(<a href="PaymentInfo.html" title="class in com.uptrillion.sdk.payment.reader">PaymentInfo</a>&nbsp;paymentInfo,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cardPaymentProcess(com.uptrillion.sdk.payment.reader.CardProcessInformation,boolean)">cardPaymentProcess</a></span>&#8203;(<a href="CardProcessInformation.html" title="class in com.uptrillion.sdk.payment.reader">CardProcessInformation</a>&nbsp;cardProcessInformation,
                   boolean&nbsp;fallback)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -192,7 +187,20 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#manualPaymentProcess(com.uptrillion.sdk.payment.reader.CardProcessInformation)">manualPaymentProcess</a></span>&#8203;(<a href="CardProcessInformation.html" title="class in com.uptrillion.sdk.payment.reader">CardProcessInformation</a>&nbsp;cardProcessInformation)</code></th>
+<td class="colLast">
+<div class="block">manual transaction:
+ 1.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPaymentCallback(com.uptrillion.sdk.payment.PaymentCallback)">setPaymentCallback</a></span>&#8203;(<a href="../PaymentCallback.html" title="interface in com.uptrillion.sdk.payment">PaymentCallback</a>&nbsp;pCallback)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPaymentEntryModeTag(boolean)">setPaymentEntryModeTag</a></span>&#8203;(boolean&nbsp;isMaunalTrans)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -222,20 +230,10 @@ extends java.lang.Object</pre>
 <a id="&lt;init&gt;()">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>CardProcess</h4>
-<pre>public&nbsp;CardProcess()</pre>
-</li>
-</ul>
-<a id="&lt;init&gt;(android.content.Context,com.uptrillion.sdk.device.DeviceConnect)">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CardProcess</h4>
-<pre>public&nbsp;CardProcess&#8203;(android.content.Context&nbsp;cont,
-                   <a href="../../device/DeviceConnect.html" title="class in com.uptrillion.sdk.device">DeviceConnect</a>&nbsp;deviceConnect)</pre>
+<pre>public&nbsp;CardProcess()</pre>
 </li>
 </ul>
 </li>
@@ -266,14 +264,40 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;<a href="../PaymentCallback.html" title="interface in com.uptrillion.sdk.payment">PaymentCallback</a>&nbsp;getPaymentCallback()</pre>
 </li>
 </ul>
-<a id="cardPaymentProcess(com.uptrillion.sdk.payment.reader.PaymentInfo,boolean)">
+<a id="setPaymentEntryModeTag(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPaymentEntryModeTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPaymentEntryModeTag&#8203;(boolean&nbsp;isMaunalTrans)</pre>
+</li>
+</ul>
+<a id="cardPaymentProcess(com.uptrillion.sdk.payment.reader.CardProcessInformation,boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cardPaymentProcess</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;cardPaymentProcess&#8203;(<a href="CardProcessInformation.html" title="class in com.uptrillion.sdk.payment.reader">CardProcessInformation</a>&nbsp;cardProcessInformation,
+                               boolean&nbsp;fallback)</pre>
+</li>
+</ul>
+<a id="manualPaymentProcess(com.uptrillion.sdk.payment.reader.CardProcessInformation)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>cardPaymentProcess</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;cardPaymentProcess&#8203;(<a href="PaymentInfo.html" title="class in com.uptrillion.sdk.payment.reader">PaymentInfo</a>&nbsp;paymentInfo,
-                               boolean&nbsp;fallback)</pre>
+<h4>manualPaymentProcess</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;manualPaymentProcess&#8203;(<a href="CardProcessInformation.html" title="class in com.uptrillion.sdk.payment.reader">CardProcessInformation</a>&nbsp;cardProcessInformation)</pre>
+<div class="block">manual transaction:
+ 1. initTerminalConfig
+ 2. beginTransaction
+ 3. increaseDeviceKSN</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cardProcessInformation</code> - </dd>
+</dl>
 </li>
 </ul>
 </li>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,8 +181,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="model/GetAccessToken.GetAccessTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">GetAccessToken.GetAccessTokenResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAccessTokenImpl(com.uptrillion.sdk.authentication.Configuration,android.content.Context)">getAccessTokenImpl</a></span>&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                  android.content.Context&nbsp;context)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAccessTokenImpl(android.content.Context)">getAccessTokenImpl</a></span>&#8203;(android.content.Context&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -192,34 +191,41 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="model/Receipt.ReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.ReceiptResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReceiptWithAccessToken(com.uptrillion.sdk.authentication.Configuration,java.lang.String)">getReceiptWithAccessToken</a></span>&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                         java.lang.String&nbsp;traceNumber)</code></th>
+<td class="colFirst"><code><a href="model/Receipt.GetReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.GetReceiptResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReceiptWithAccessToken(java.lang.String)">getReceiptWithAccessToken</a></span>&#8203;(java.lang.String&nbsp;traceNumber)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="model/Transaction.TransactionResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Transaction.TransactionResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#paymentTransactionWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation)">paymentTransactionWithAccessToken</a></span>&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#paymentTransactionWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,boolean,boolean)">paymentTransactionWithAccessToken</a></span>&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation,
+                                 boolean&nbsp;isReversal,
+                                 boolean&nbsp;isWaitShort)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="model/RefreshToken.RefreshTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">RefreshToken.RefreshTokenResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#refreshAccessTokenImpl(com.uptrillion.sdk.authentication.Configuration,android.content.Context)">refreshAccessTokenImpl</a></span>&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                      android.content.Context&nbsp;context)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#refreshAccessTokenImpl(android.content.Context)">refreshAccessTokenImpl</a></span>&#8203;(android.content.Context&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="model/Receipt.ReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.ReceiptResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendReceiptWithAccessToken(com.uptrillion.sdk.authentication.Configuration,java.lang.String,java.lang.String,java.lang.String)">sendReceiptWithAccessToken</a></span>&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                          java.lang.String&nbsp;traceNumber,
+<td class="colFirst"><code><a href="model/Receipt.SendReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.SendReceiptResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendReceiptWithAccessToken(java.lang.String,java.lang.String,java.lang.String)">sendReceiptWithAccessToken</a></span>&#8203;(java.lang.String&nbsp;traceNumber,
                           java.lang.String&nbsp;email,
                           java.lang.String&nbsp;mobile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="model/TransactionAndOrder.TransactAndOrderResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">TransactionAndOrder.TransactAndOrderResponse</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactAndUploadOrderWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,com.uptrillion.sdk.payment.transcation.UploadOrderInformation)">transactAndUploadOrderWithAccessToken</a></span>&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation,
-                                     <a href="../transcation/UploadOrderInformation.html" title="class in com.uptrillion.sdk.payment.transcation">UploadOrderInformation</a>&nbsp;orderInformation)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactAndUploadOrderWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,com.uptrillion.sdk.payment.transcation.UploadOrderInformation,boolean,boolean)">transactAndUploadOrderWithAccessToken</a></span>&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation,
+                                     <a href="../transcation/UploadOrderInformation.html" title="class in com.uptrillion.sdk.payment.transcation">UploadOrderInformation</a>&nbsp;orderInformation,
+                                     boolean&nbsp;isReversal,
+                                     boolean&nbsp;isWaitShort)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="model/Signature.SignatureResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Signature.SignatureResponse</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uploadSignatureWithAccessToken(java.lang.String,java.lang.String)">uploadSignatureWithAccessToken</a></span>&#8203;(java.lang.String&nbsp;traceNumber,
+                              java.lang.String&nbsp;signData)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -273,12 +279,10 @@ extends java.lang.Object</pre>
 <h4>foreEndSaltImpl</h4>
 <pre class="methodSignature">public&nbsp;<a href="model/LoginInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">LoginInfo</a>&nbsp;foreEndSaltImpl&#8203;(java.lang.String&nbsp;email)
                           throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                 <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
                                  java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
@@ -292,126 +296,135 @@ extends java.lang.Object</pre>
 <pre class="methodSignature">public&nbsp;<a href="model/LoginInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">LoginInfo</a>&nbsp;getAuthImpl&#8203;(java.lang.String&nbsp;password,
                              <a href="model/LoginInfo.html" title="class in com.uptrillion.sdk.payment.entity.model">LoginInfo</a>&nbsp;loginInfo)
                       throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                             <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
                              java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="getAccessTokenImpl(com.uptrillion.sdk.authentication.Configuration,android.content.Context)">
+<a id="getAccessTokenImpl(android.content.Context)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAccessTokenImpl</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/GetAccessToken.GetAccessTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">GetAccessToken.GetAccessTokenResponse</a>&nbsp;getAccessTokenImpl&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                                                                android.content.Context&nbsp;context)
+<pre class="methodSignature">public&nbsp;<a href="model/GetAccessToken.GetAccessTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">GetAccessToken.GetAccessTokenResponse</a>&nbsp;getAccessTokenImpl&#8203;(android.content.Context&nbsp;context)
                                                          throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                                                <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
                                                                 java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="refreshAccessTokenImpl(com.uptrillion.sdk.authentication.Configuration,android.content.Context)">
+<a id="refreshAccessTokenImpl(android.content.Context)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>refreshAccessTokenImpl</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/RefreshToken.RefreshTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">RefreshToken.RefreshTokenResponse</a>&nbsp;refreshAccessTokenImpl&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                                                                android.content.Context&nbsp;context)
+<pre class="methodSignature">public&nbsp;<a href="model/RefreshToken.RefreshTokenResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">RefreshToken.RefreshTokenResponse</a>&nbsp;refreshAccessTokenImpl&#8203;(android.content.Context&nbsp;context)
                                                          throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                                                <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
                                                                 java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="paymentTransactionWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation)">
+<a id="paymentTransactionWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>paymentTransactionWithAccessToken</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/Transaction.TransactionResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Transaction.TransactionResponse</a>&nbsp;paymentTransactionWithAccessToken&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation)
+<pre class="methodSignature">public&nbsp;<a href="model/Transaction.TransactionResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Transaction.TransactionResponse</a>&nbsp;paymentTransactionWithAccessToken&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation,
+                                                                         boolean&nbsp;isReversal,
+                                                                         boolean&nbsp;isWaitShort)
                                                                   throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                                                         <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
-                                                                         java.io.IOException</pre>
+                                                                         java.io.IOException,
+                                                                         java.lang.NullPointerException,
+                                                                         org.json.JSONException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
+<dd><code>java.lang.NullPointerException</code></dd>
+<dd><code>org.json.JSONException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="transactAndUploadOrderWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,com.uptrillion.sdk.payment.transcation.UploadOrderInformation)">
+<a id="transactAndUploadOrderWithAccessToken(com.uptrillion.sdk.payment.transcation.TransactionInformation,com.uptrillion.sdk.payment.transcation.UploadOrderInformation,boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transactAndUploadOrderWithAccessToken</h4>
 <pre class="methodSignature">public&nbsp;<a href="model/TransactionAndOrder.TransactAndOrderResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">TransactionAndOrder.TransactAndOrderResponse</a>&nbsp;transactAndUploadOrderWithAccessToken&#8203;(<a href="../transcation/TransactionInformation.html" title="class in com.uptrillion.sdk.payment.transcation">TransactionInformation</a>&nbsp;transactionInformation,
-                                                                                          <a href="../transcation/UploadOrderInformation.html" title="class in com.uptrillion.sdk.payment.transcation">UploadOrderInformation</a>&nbsp;orderInformation)
-                                                                                   throws <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
-                                                                                          java.io.IOException,
-                                                                                          <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></pre>
+                                                                                          <a href="../transcation/UploadOrderInformation.html" title="class in com.uptrillion.sdk.payment.transcation">UploadOrderInformation</a>&nbsp;orderInformation,
+                                                                                          boolean&nbsp;isReversal,
+                                                                                          boolean&nbsp;isWaitShort)
+                                                                                   throws java.io.IOException,
+                                                                                          <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
+                                                                                          org.json.JSONException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
+<dd><code>org.json.JSONException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="getReceiptWithAccessToken(com.uptrillion.sdk.authentication.Configuration,java.lang.String)">
+<a id="getReceiptWithAccessToken(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getReceiptWithAccessToken</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/Receipt.ReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.ReceiptResponse</a>&nbsp;getReceiptWithAccessToken&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                                                         java.lang.String&nbsp;traceNumber)
-                                                  throws <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
-                                                         <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                                         java.io.IOException</pre>
+<pre class="methodSignature">public&nbsp;<a href="model/Receipt.GetReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.GetReceiptResponse</a>&nbsp;getReceiptWithAccessToken&#8203;(java.lang.String&nbsp;traceNumber)
+                                                     throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
+                                                            java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
-<a id="sendReceiptWithAccessToken(com.uptrillion.sdk.authentication.Configuration,java.lang.String,java.lang.String,java.lang.String)">
+<a id="sendReceiptWithAccessToken(java.lang.String,java.lang.String,java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendReceiptWithAccessToken</h4>
+<pre class="methodSignature">public&nbsp;<a href="model/Receipt.SendReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.SendReceiptResponse</a>&nbsp;sendReceiptWithAccessToken&#8203;(java.lang.String&nbsp;traceNumber,
+                                                              java.lang.String&nbsp;email,
+                                                              java.lang.String&nbsp;mobile)
+                                                       throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
+                                                              java.io.IOException</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
+<dd><code>java.io.IOException</code></dd>
+</dl>
+</li>
+</ul>
+<a id="uploadSignatureWithAccessToken(java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>sendReceiptWithAccessToken</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/Receipt.ReceiptResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Receipt.ReceiptResponse</a>&nbsp;sendReceiptWithAccessToken&#8203;(<a href="../../authentication/Configuration.html" title="class in com.uptrillion.sdk.authentication">Configuration</a>&nbsp;configuration,
-                                                          java.lang.String&nbsp;traceNumber,
-                                                          java.lang.String&nbsp;email,
-                                                          java.lang.String&nbsp;mobile)
-                                                   throws <a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a>,
-                                                          <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
-                                                          java.io.IOException</pre>
+<h4>uploadSignatureWithAccessToken</h4>
+<pre class="methodSignature">public&nbsp;<a href="model/Signature.SignatureResponse.html" title="class in com.uptrillion.sdk.payment.entity.model">Signature.SignatureResponse</a>&nbsp;uploadSignatureWithAccessToken&#8203;(java.lang.String&nbsp;traceNumber,
+                                                                  java.lang.String&nbsp;signData)
+                                                           throws <a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a>,
+                                                                  java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../online/exception/OnlineException.html" title="class in com.uptrillion.sdk.online.exception">OnlineException</a></code></dd>
 <dd><code><a href="../../online/exception/CommException.html" title="class in com.uptrillion.sdk.online.exception">CommException</a></code></dd>
 <dd><code>java.io.IOException</code></dd>
 </dl>
